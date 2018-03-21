@@ -12,7 +12,7 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<id>nexus</id>
-			<url>http://localhost:8081/content/repositories/snapshots</url>
+			<url>${snapshot.url}</url>
 		</snapshotRepository>
 	</distributionManagement>
 	
@@ -32,6 +32,7 @@
         <tiles.version>2.2.2</tiles.version>
         <!-- If run from Bamboo this will be replaced with the bamboo build number -->
         <build.number>local</build.number>
+	<snapshot.url>http://localhost:8081/content/repositories/snapshots</snapshot.url>
     </properties>
 
     <build>
