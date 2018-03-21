@@ -10,6 +10,10 @@
 	
 	<!--Distribution management controls the Nexus repo location -->
 	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<url>${snapshot.url}</url>
+		</repository>
 		<snapshotRepository>
 			<id>nexus</id>
 			<url>${snapshot.url}</url>
